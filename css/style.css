@@ -1,5 +1,147 @@
+/* Overriding Defaults */
 * {
-    margin: 0;
+    margin: 1px;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* Setting Color Pallete */
+:root {
+    --primary-color: #6622CC;
+    --secondary-color: #A755C2;
+    --tertiary-color: #B07C9E;
+    --quaternary-color: #B59194;
+    --quinary-color: #D2A1B8;
+}
+
+/* Setting Global Styles */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header styles */
+header {
+    background-color: var(--primary-color);
+}
+
+/* Nav styles */
+nav {
+    background-color: var(--primary-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav Links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Changing nav hover effect */
+nav a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+/* Joke Card */
+.joke-card {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.joke-card h2,
+.joke-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.joke-card button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.joke-card button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer Styles */
+footer {
+    margin-top: auto;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* About Styles */
+.about {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
